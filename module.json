@@ -1,38 +1,57 @@
 {
   "id": "axeclefts-adventurers-minions",
-  "title": "Axecleft's Adventurer and Minion Generation Tools",
-  "description": "A unified toolkit for D35E SRD PC/NPC creation.",
-  "version": "1.0.2",
-  "compatibility": { "minimum": "11", "verified": "11.315" },
+  "title": "Axecleft's Adventurers and Minions",
+  "description": "Complete D35E characters and NPCs: build one step by step (race, abilities, classes and levels, hit points, skills, feats, spells, equipment), checked against the SRD rules, and D35E works out the rest. Random characters, one or many at once, and editing existing actors: add or change classes and levels and have the character redone.",
+  "version": "1.14.2.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
   "authors": [
-     {
-       "name": "Axecleft", "url": ""
-     },
-     {
-       "name": "ChatGPT ver. 5", "url": "chatgpt.com"
-     }
+    {
+      "name": "Axecleft",
+      "url": "https://www.patreon.com/Axecleft",
+      "discord": "axecleft"
+    }
   ],
-  "scripts": [
-    "scripts/main.js",
-    "scripts/apps/AbilityAssigner.js",
-    "scripts/apps/ClassAssigner.js",
-    "scripts/apps/aamhub.js"
+  "relationships": {
+    "systems": [
+      {
+        "id": "D35E",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "recommends": [
+      {
+        "id": "axecleft-gemstones",
+        "type": "module",
+        "manifest": "https://github.com/Axecleft/Axeclefts-Gemstones/releases/latest/download/module.json",
+        "reason": "The Treasure Generator, for the treasure a character's wealth buys (Armory and Curios have it too)"
+      },
+      {
+        "id": "axeclefts-armory",
+        "type": "module",
+        "manifest": "https://github.com/Axecleft/Armory/releases/latest/download/module.json",
+        "reason": "Masterwork and magic arms and armor, special materials and abilities"
+      },
+      {
+        "id": "axeclefts-curios",
+        "type": "module",
+        "manifest": "https://github.com/Axecleft/Curios/releases/latest/download/module.json",
+        "reason": "Potions, scrolls, wands, rings and wondrous items in a character's treasure"
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/axecleft-tools.js",
+    "scripts/aam2.js"
   ],
-  "styles": [
-    "styles/theme.css",
-    "styles/class-assigner.css"
-  ],
-  "languages": [
-    { "lang": "en", "name": "English", "path": "lang/en.json" }
-  ],
-  "url": "https://github.com/Axecleft/axeclefts-adventurers-minions",
-  "bugs": "",
+  "styles": [],
+  "socket": true,
+  "languages": [],
   "readme": "README.md",
-  "esmodules": [],
-  "packs": [],
-  "socket": false,
-  "manifest": "https://github.com/Axecleft/axeclefts-adventurers-minions/releases/latest/download/module.json",
-  "download": "https://github.com/Axecleft/axeclefts-adventurers-minions/archive/refs/tags/1.0.2.zip"
+  "url": "https://github.com/Axecleft/Axeclefts-Adventurers-Minions",
+  "manifest": "https://github.com/Axecleft/Axeclefts-Adventurers-Minions/releases/latest/download/module.json",
+  "download": "https://github.com/Axecleft/Axeclefts-Adventurers-Minions/releases/download/1.14.2.0/module.zip"
 }
-
-
